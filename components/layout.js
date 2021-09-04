@@ -13,14 +13,14 @@ export default function Layout({ children, home }) {
               <div className={styles.titleBox}>
                   <p className={styles.title}>harbor</p>
               </div>
-              <ul className={styles.list}>
+              {/* <ul className={styles.list}> */}
                   <li className={styles.navItem}><a href="#" className={styles.navLink}>Home <span class="sr-only">(current)</span></a></li>
                   <li className={styles.navItem}><a href="#" className={styles.navLink}>About</a></li>
                   <li className={styles.navItem}><a href="#" className={styles.navLink}>Know Your Risks</a></li>
                   <li className={styles.navItem}><a href="#" className={styles.navLink}>For Work</a></li>
                   <li className={styles.navItem}><a href="#" className={styles.navLink}>Journal</a></li>
                   <li className={styles.navItem}><a href="#" className={styles.navLink}>Shop</a></li>
-              </ul>
+              {/* </ul> */}
           </div>
       </nav>
       <Image
