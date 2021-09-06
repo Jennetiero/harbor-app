@@ -1,38 +1,46 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from './navbar.module.css'
-import utilStyles from '../styles/utils.module.css'
-
-const name = 'Your Name'
-export const siteTitle = 'Next.js Sample Website'
+import Image from "next/image";
+import styles from "./navbar.module.css";
 
 export default function Navbar({ children, home }) {
-  return (
-    <>
-    <nav className={styles.navbar}>
-          <div className={styles.container}>
-              <div className={styles.titleBox}>
-                  <p className={styles.title}>harbor</p>
-              </div>
-              <ul className={styles.list}>
-                  <li className={styles.navItem}><a href="#" className={styles.navLink}>Home</a></li>
-                  <li className={styles.navItem}><a href="#" className={styles.navLink}>About</a></li>
-                  <li className={styles.navItem}><a href="#" className={styles.navLink}>Know Your Risks</a></li>
-                  <li className={styles.navItem}><a href="#" className={styles.navLink}>For Work</a></li>
-                  <li className={styles.navItem}><a href="#" className={styles.navLink}>Journal</a></li>
-                  <li className={styles.navItem}><a href="#" className={styles.navLink}>Shop</a></li>
-              </ul>
-          </div>
-      </nav>
-      
-          </>
-  )
+    return (
+        <>
+            <header className={styles.home}>
+                <h1 className={styles.logo}>harbor</h1>
+                <nav>
+                    <ul className={styles.navLinks}>
+                        <li className={styles.navItem}>
+                            <a href="#" className={styles.navLink}>
+                                Home
+                            </a>
+                        </li>
+                        <li className={styles.navItem}>
+                            <a href="#" className={styles.navLink}>
+                                About
+                            </a>
+                        </li>
+                        <li className={styles.navItem}>
+                            <a href="#" className={styles.navLink}>
+                                Know Your Risks
+                            </a>
+                        </li>
+                        <li className={styles.navItem}>
+                            <a href="#" className={styles.navLink}>
+                                For Work
+                            </a>
+                        </li>
+                        <li className={styles.navItem}>
+                            <a href="#" className={styles.navLink}>
+                                Journal
+                            </a>
+                        </li>
+                        <li className={styles.navItem}>
+                            <a href="#" className={styles.navLink}>
+                                Shop
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </>
+    );
 }
-
-/*<Image
-priority
-src="/images/profile.jpg"
-className={utilStyles.borderCircle}
-height={400}
-width={400}
-/> */
