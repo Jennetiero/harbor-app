@@ -6,7 +6,7 @@ export default function AboutPage({ children, home }) {
         <>
             <div className={styles.main}>
                 <h1 className={styles.headQuote}>
-                    The right plan for when things don't go as planned
+                Reimagining readiness for life's uncertain moments.
                 </h1>
                 <h4 className={styles.quote}>
                     The app that makes disaster preparedness easy and
@@ -27,6 +27,7 @@ export default function AboutPage({ children, home }) {
                         width={721}
                     />
                 </div>
+                <hr className={styles.line}/>
             </div>
         </>
     );

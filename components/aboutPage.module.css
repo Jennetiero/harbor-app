@@ -1,20 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@500&display=swap");
 
 .headQuote {
     position: absolute;
     width: 641px;
     height: 112px;
-    left: calc(50% - 641px/2 + 0.5px);
-    top: 19%;
-    
-    font-family: 'DM Serif Display', serif;
+    left: calc(50% - 641px / 2 + 0.5px);
+    top: 25%;
+    font-family: "DM Serif Display", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
     line-height: 56px;
     text-align: center;
-    color: #28514F;
+    color: #28514f;
 }
 
 .main {
@@ -67,12 +66,22 @@
 }
 
 .profile {
-    display: block;
+    position: absolute;
     justify-content: space-around;
     align-items: center;
-    padding: 30% 45%;
-    bottom:0;
+    left: -0.19px;
+    bottom: 0;
 }
 .container {
     margin-top: 20%;
+}
+
+.line {
+    position: absolute;
+    width: 157px;
+    height: 3px;
+    left: 48%;
+    align-items: center;
+    background: rgba(27, 31, 43, 0.12);
+    border-radius: 40px;
 }
