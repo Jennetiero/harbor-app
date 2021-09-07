@@ -1,8 +1,6 @@
-.main {
-    display: block;
-    justify-content: space-around;
-    align-items: center;
-    /* padding: 10% ; */
+.container {
+    display: grid;
+    flex-direction: column;
 }
 
 .headQuote {
@@ -29,15 +27,22 @@
     text-align: center;
 }
 
-.boxed {
+.boxOne {
     position: relative;
     width: 460px;
     height: 768px;
     left: 22%;
     right: 0%;
-    top: 0px;
+    top: 7rem;
     background: #dae1f4;
     border-radius: 20px;
+}
+
+.img {
+    position: absolute;
+    left: 10.87%;
+    right: 10.87%;
+    top: calc(50% - 321px / 2 - 163.5px);
 }
 
 .textBox {
@@ -45,17 +50,13 @@
     height: 95px;
     left: 10%;
     right: 0.83%;
-    top: 65%;
+    top: 60%;
     color: #1b1f2b;
     font-family: "Roboto";
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
-line-height: 47px;
-}
-
-.bags{
-top: 10%;
+    line-height: 47px;
 }
 
 .boxQuote {
@@ -63,6 +64,20 @@ top: 10%;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #626464;
-    text-align: center;
+    color: #1b1f2b;
+    text-align: start;
+    top: 80%;
+    padding: 0 50px;
+}
+
+.boxTwo {
+    position: relative;
+    float:right;
+    width: 460px;
+    height: 866px;
+    /* left: 22%; */
+    right: 15%;
+    bottom: 42rem;
+    background: #dae1f4;
+    border-radius: 20px;
 }

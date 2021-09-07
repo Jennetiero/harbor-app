@@ -9,12 +9,17 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>harbor</title>
+            <title>harbor</title>
             </Head>
+
+                
+                
+            
             <Navbar />
             <AboutPage />
             <RisksPage/>
             <section className={utilStyles.headingMd}></section>
+            
         </>
     );
 }

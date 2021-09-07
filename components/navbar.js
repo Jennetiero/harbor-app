@@ -4,7 +4,7 @@ import styles from "./navbar.module.css";
 export default function Navbar({ children, home }) {
     return (
         <>
-            <header className={styles.home}>
+            <header className={styles.home}> 
                 <h1 className={styles.logo}>harbor</h1>
                 <nav>
                     <ul className={styles.navLinks}>
