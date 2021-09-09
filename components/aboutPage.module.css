@@ -16,7 +16,7 @@
     color: #28514f;
 }
 
-.main {
+.wrapper {
     display: grid;
     height: fit-content;
     justify-content: center;
@@ -172,22 +172,13 @@
 }
 
 @media (max-width: 900px){
-    .boxes {
-        display:flex;
-        flex-direction: column;
-    }
-    .boxOne  {
-        display: flex;
-        position: absolute;
-        left: 20rem;
-        top: 120rem;
-  }
   .boxTwo {
-    display: flex;
-    position: relative;
-    /* flex-direction: "column"; */
-    top: 52rem;
-    right: 20%;
+    display: none;
+
+  }
+  .boxFour {
+      display: none;
+      position: fixed;
   }
   }
 
@@ -243,4 +234,40 @@
     bottom: 81rem;
     background: #F4F0E9;
     border-radius: 20px;
+  }
+
+  .reviewBox {
+    position: relative;
+    width: 294px;
+    height: 230px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+
+  .textReview {
+    position: relative;
+    height: 60px;
+    left: 5%;
+    top: 28px;
+    font-family: "Merriweather" sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1B1F2B;
+    text-align: start;
+  }
+
+  .starsImg {
+      position: relative;
+      height: 23px;
+      left: 10.54%;
+      right: 44.9%;
+      top: 10rem;
   }
