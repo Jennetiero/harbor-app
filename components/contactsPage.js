@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function ContactsPage({ children, home }) {
     return (
         <>
-            <main className={styles.container}>
-                <div>
+            <div className={styles.container}>
+                <div className={styles.boxWrapper}>
                     <h1 className={styles.headQuote}>
                         Our mission is to encourage readiness for all
                     </h1>
@@ -17,17 +17,17 @@ export default function ContactsPage({ children, home }) {
                     <button className={styles.infoButton}>
                         Learn more about us
                     </button>
-                    <div className={styles.aboutImg}>
-                    <Image
-                        priority
-                        src="/images/about.jpg"
-                        width={1443}
-                        height={270}
-                        layout="intrinsic"
-                    />
-                    </div>
                 </div>
-            </main>
+                <div className={styles.banner}>
+                <h1 className={styles.text}>
+                Stay one step ahead with harbor
+                    </h1>
+                    <div>
+                    <button className={styles.appStore}>App Store</button>
+                    <button className={styles.playMarket}>Play Store</button>
+                </div>
+                </div>
+            </div>
         </>
     );
 }
