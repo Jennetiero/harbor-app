@@ -18,11 +18,10 @@ export default function AboutPage({ children, home }) {
                     <button className={styles.appStore}>App Store</button>
                     <button className={styles.playMarket}>Play Store</button>
                 </div>
-                <div className={styles.container}>
+                <div className={styles.profile}>
                     <Image
                         quality={100}
                         src="/images/profile.jpg"
-                        className={styles.profile}
                         height={1047}
                         width={721}
                     />

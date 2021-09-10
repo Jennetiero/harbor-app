@@ -19,12 +19,22 @@ export default function ContactsPage({ children, home }) {
                     </button>
                 </div>
                 <div className={styles.banner}>
+                
                 <h1 className={styles.text}>
                 Stay one step ahead with harbor
                     </h1>
+                    
                     <div>
                     <button className={styles.appStore}>App Store</button>
                     <button className={styles.playMarket}>Play Store</button>
+                </div>
+                <div className={styles.profile}>
+                    <Image
+                        quality={100}
+                        src="/images/phone.jpg"
+                        height={384}
+                        width={416}
+                    />
                 </div>
                 </div>
             </div>
