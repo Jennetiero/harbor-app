@@ -1,4 +1,5 @@
 .container {
+    display: block;
     width: 100%;
     top: 0;
     left: 0;
@@ -104,6 +105,7 @@
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     border: none;
+    cursor: pointer;
 }
 
 .appStore:hover {
@@ -120,6 +122,7 @@
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     border: none;
+    cursor: pointer;
 }
 
 .playMarket:hover {
@@ -133,4 +136,117 @@
     left: 51.04%;
     right: 5.31%;
     top: calc(40% - 348px / 2 - 0.33px);
+}
+
+.headText {
+    position: relative;
+    width: 641px;
+    height: 112px;
+    left: calc(50% - 641px / 2 + 0.5px);
+    top: 35%;
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    color: #28514f;
+}
+
+.textQuote {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-top: 3rem;
+    font-size: 16px;
+    color: #65727b;
+    text-align: center;
+}
+
+.inputForm {
+    position: relative;
+    width: 276px;
+    height: 60px;
+    left: calc(50% - 276px / 2 - 0.33px);
+    top: -0.47px;
+    border: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: black;
+    background: #ffffff;
+    box-shadow: 0px 4px 0px rgba(167, 167, 167, 0.16);
+    border-radius: 40px 0px 0px 40px;
+}
+
+.inputForm:focus {
+    outline: none;
+}
+
+.confirmButton {
+    position: relative;
+    width: 6rem;
+    height: 60px;
+    left: 42%;
+    right: 0%;
+    top: 0px;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 36px;
+    background: #28514f;
+    box-shadow: 0px 4px 0px rgba(167, 167, 167, 0.16);
+    border-radius: 0px 40px 40px 0px;
+}
+
+.logo {
+    position: relative;
+    flex: 0 0 60px;
+    cursor: pointer;
+    margin-right: 56rem;
+    max-width: 100%;
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    color: #28514f;
+}
+
+.list {
+    position: relative;
+    padding: 0 5rem;
+    
+}
+
+.navItem {
+    display: inline-block;
+    left: 20rem;
+    
+}
+
+.navLink {
+    list-style: none;
+    padding: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #626464;
+    text-decoration: none;
+    left: 20rem;
+
+}
+
+.navLink:hover {
+    text-decoration: none;
+    background-color: rgba(101, 114, 123, 0.2);
+    color: #28514f;
+    text-decoration: none;
+    border-radius: 40px;
 }

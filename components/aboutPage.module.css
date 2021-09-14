@@ -1,12 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@500&display=swap");
 
+.wrapper {
+    display: grid;
+    height: fit-content;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 0px 0px;
+    /* grid-template-rows: 2fr 2fr; */
+    /* grid-template-columns: 1fr 1fr; */
+}
+
 .headQuote {
-    position: relative;
     width: 641px;
     height: 112px;
     left: calc(50% - 641px / 2 + 0.5px);
-    top: 25%;
+    top: -5.89px;
     font-family: "DM Serif Display", serif;
     font-style: normal;
     font-weight: 400;
@@ -16,18 +26,7 @@
     color: #28514f;
 }
 
-.wrapper {
-    display: grid;
-    height: fit-content;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    /* grid-template-rows: 50%; */
-  
-}
-
 .quote {
-    position: relative;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -46,6 +45,7 @@
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     border: none;
+    cursor: pointer;
 }
 
 .appStore:hover {
@@ -63,6 +63,7 @@
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     border: none;
+    cursor: pointer;
 }
 
 .playMarket:hover {
@@ -70,7 +71,6 @@
 }
 
 .profile {
-    position: relative;
     justify-content: space-around;
     align-items: center;
     left: -0.19px;
@@ -83,7 +83,6 @@
 }
 
 .line {
-    position: relative;
     width: 157px;
     height: 3px;
     left: 4%;
@@ -92,40 +91,14 @@
     border-radius: 40px;
 }
 
-.headQuote {
-    position: relative;
-    width: 641px;
-    height: 112px;
-    left: calc(50% - 641px / 2 + 0.5px);
-    top: -5.89px;
-    padding: 0;
-    font-family: "DM Serif Display", serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 56px;
-    text-align: center;
-    color: #28514f;
-}
-
-.quote {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #626464;
-    text-align: center;
+.boxes {
+    display: grid;
+    padding: 3rem 0;
+    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 
-.boxOne {
-    position: relative;
-    width: 460px;
-    height: 768px;
-    right: 25%;
-    top: 7rem;
-    background: #dae1f4;
-    border-radius: 20px;
-}
 
 .img {
     position: absolute;
@@ -135,7 +108,6 @@
 }
 
 .textBox {
-    position: absolute;
     height: 95px;
     left: 10%;
     right: 0.83%;
@@ -146,112 +118,128 @@
     font-weight: bold;
     font-size: 40px;
     line-height: 47px;
+    margin-left: 1.4rem;
+    margin-bottom: 1rem;
 }
 
 .boxQuote {
-    position: absolute;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #1b1f2b;
     text-align: start;
-    top: 80%;
-    padding: 0 50px;
+    top: 90%;
+    padding: 1.5rem 1.5rem 0;
+    margin-bottom: 2rem;
+}
+
+.boxOne {
+    padding: 2rem;
+    margin: 2rem;
+    width: 460px;
+    height: 768px;
+    top: 6rem;
+    background: #dae1f4;
+    border-radius: 20px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
 }
 
 .boxTwo {
-    position: relative;
-    float: left;
+    padding: 1rem 2rem 1rem;
+    margin-bottom: 2rem;
     width: 460px;
-    height: 866px;
+    height: 800px;
     left: 55%;
-    right: 15%;
     bottom: 41rem;
-    background: #D0E6F3;
+    background: #d0e6f3;
     border-radius: 20px;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
-@media (max-width: 900px){
-  .boxTwo {
-    display: none;
+.boxThree {
+    padding: 3rem;
+    margin: 0;
+    width: 460px;
+    height: 832px;
+    margin-left: 2rem;
+    right: 25%;
+    background: #e0f0e6;
+    border-radius: 20px;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
 
-  }
-  .boxFour {
-      display: none;
-      position: fixed;
-  }
-  }
+.boxFour {
+    padding: 4rem 2rem;
+    width: 460px;
+    height: 771px;
+    left: 55%;
+    right: 15%;
+    bottom: 81rem;
+    background: #f4f0e9;
+    border-radius: 20px;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
 
-  .blueImg {
-    position: absolute;
+@media (max-width: 900px) {
+    .boxes {
+        display: grid;
+    }
+}
+
+.blueImg {
     left: 10.87%;
     right: 10.87%;
-    top: calc(50% - 391px/2 + 187.5px);
-  }
+    top: calc(50% - 391px / 2 + 187.5px);
+}
 
-  .blueText {
-    position: absolute;
+.blueText {
     height: 95px;
     left: 10%;
     right: 0.83%;
-    top:8%;
     color: #1b1f2b;
     font-family: "Roboto";
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
     line-height: 47px;
-  }
+    margin-left: 1.4rem;
+    margin-bottom: 2rem;
+    
+}
 
-  .blueQuote {
-    position: absolute;
+.blueQuote {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #1b1f2b;
     text-align: start;
-    top: 30%;
-    padding: 0 50px;
-  }
+    padding: 1.5rem 1.5rem 0;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+}
 
-  .boxThree {
-    position: relative;
-    width: 460px;
-    height: 832px;
-    right: 25%;
-    bottom: 35rem;
-    background: #E0F0E6;
-    border-radius: 20px;
-  }
-
-  .boxFour {
-    position: relative;
-    float: left;
-    width: 460px;
-    height: 771px;
-    left: 55%;
-    right: 15%;
-    bottom: 81rem;
-    background: #F4F0E9;
-    border-radius: 20px;
-  }
-
-  .reviewBox {
-    position: relative;
+.reviewBox {
+    padding: 1rem;
     width: 294px;
     height: 230px;
     left: 0%;
     right: 0%;
     top: 0px;
-    
-    background: #FFFFFF;
+    background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     border-radius: 20px;
-  }
+}
 
-  .textReview {
-    position: relative;
+.textReview {
     height: 60px;
     left: 5%;
     top: 28px;
@@ -260,14 +248,13 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    color: #1B1F2B;
+    color: #1b1f2b;
     text-align: start;
-  }
+}
 
-  .starsImg {
-      position: relative;
-      height: 23px;
-      left: 10.54%;
-      right: 44.9%;
-      top: 10rem;
-  }
+.starsImg {
+    height: 23px;
+    left: 10.54%;
+    right: 44.9%;
+    top: 10rem;
+}

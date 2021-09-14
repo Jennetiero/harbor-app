@@ -15,7 +15,7 @@ export default function Navbar({ children, home }) {
                         <nav className={styles.headerMenu}>
                             <ul className={styles.headerList}>
                                 <li className={styles.navItem}>
-                                    <a href="#" className={styles.navLink}>
+                                    <a href="#" to="/contactsPage" className={styles.navLink}>
                                         Home
                                     </a>
                                 </li>
@@ -26,7 +26,7 @@ export default function Navbar({ children, home }) {
                                 </li>
                                 <li className={styles.navItem}>
                                     <a href="#" className={styles.navLink}>
-                                        For Work
+                                        Risks
                                     </a>
                                 </li>
                                 <li className={styles.navItem}>
