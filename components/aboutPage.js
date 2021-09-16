@@ -8,6 +8,7 @@ export default function AboutPage({ children, home }) {
                 <h1 className={styles.headQuote}>
                     Reimagining readiness for life's uncertain moments.
                 </h1>
+                <br/>
                 <h4 className={styles.quote}>
                     The app that makes disaster preparedness easy and
                     accessible.
@@ -20,6 +21,7 @@ export default function AboutPage({ children, home }) {
                 </div>
                 <div className={styles.profile}>
                     <Image
+                    style="width:100%;"
                         quality={100}
                         src="/images/profile.jpg"
                         height={1047}
