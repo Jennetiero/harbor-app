@@ -5,6 +5,7 @@ import Navbar from "../components/navbar";
 import AboutPage from "../components/aboutPage";
 import ContactsPage from "../components/contactsPage";
 import Script from 'next/script'
+import BoxesPage from "../components/boxesPage";
 
 export default function Home() {
     return (
@@ -19,6 +20,7 @@ export default function Home() {
 
             <Navbar />
             <AboutPage />
+            <BoxesPage/>
             <ContactsPage/>
             <section className={utilStyles.headingMd}></section>
             
