@@ -9,6 +9,12 @@
     .header  {
         width: 100%;
     }
+    .headerBody {
+        width: 100%;
+    }
+    .logo {
+        width: 100%;
+    }
 }
 
 .header {

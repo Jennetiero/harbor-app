@@ -4,7 +4,7 @@ import styles from "./boxesPage.module.css";
 export default function BoxesPage({ children, home }) {
     return (
         <>
-<div className={styles.container}>
+<div className={styles.main}>
 <div className={styles.boxes}>
                     <div className={styles.boxOne}>
                         <Image
@@ -84,11 +84,10 @@ export default function BoxesPage({ children, home }) {
                     </div>
                 </div>
                 <h1 className={styles.headQuote}>
-                    Reimagining readiness for life's uncertain moments.
+                We're ready, are you?
                 </h1>
                 <h4 className={styles.quote}>
-                    The app that makes disaster preparedness easy and
-                    accessible.{" "}
+                    Here's what people are saying about harbor.
                 </h4>
                 <div className={styles.reviewBox}>
                 
