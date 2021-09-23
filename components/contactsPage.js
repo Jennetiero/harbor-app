@@ -19,28 +19,22 @@ export default function ContactsPage({ children, home }) {
                     </button>
                 </div>
                 <div className={styles.banner}>
-                    <div className={styles.block}>
+                    <div className={styles.button}>
                         <h1 className={styles.text}>
                             Stay one step ahead with harbor
                         </h1>
-                        {/* <div className={styles.button}> */}
-                            <button className={styles.appStore}>
-                                App Store
-                            </button>
-                            <button className={styles.playMarket}>
-                                Play Store
-                            </button>
-                            </div>
-                            {/* <div className={styles.profile}>
-                                <Image
-                                    quality={100}
-                                    src="/images/phone.jpg"
-                                    height={384}
-                                    width={416}
-                                />
-                            </div> */}
-                        {/* </div> */}
-                    
+
+                        <button className={styles.appStore}>App Store</button>
+                        <button className={styles.playMarket}>
+                            Play Store
+                        </button>
+                        
+                    </div>
+                    <div className={styles.profile}>
+                            <img
+                                src="/images/phone.jpg"
+                            />
+                        </div>
                 </div>
                 <h1 className={styles.headText}>Join harbor high fives</h1>
                 <h4 className={styles.textQuote}>
@@ -51,31 +45,14 @@ export default function ContactsPage({ children, home }) {
                     for Android.
                 </h4>
                 <div className={styles.email}>
-                <input
-                    className={styles.inputForm}
-                    placeholder="Email address"
-                ></input>
-                <button className={styles.confirmButton}>SIGN UP</button>
+                    <input
+                        className={styles.inputForm}
+                        placeholder="Email address"
+                    ></input>
+                    <button className={styles.confirmButton}>SIGN UP</button>
                 </div>
                 <br />
                 <h1 className={styles.logo}>harbor</h1>
-                {/* <ul className={styles.list}>
-                <li className={styles.navItem}>
-                    <a href="#" className={styles.navLink}>
-                        Home
-                    </a>
-                </li>
-                <li className={styles.navItem}>
-                    <a href="#" className={styles.navLink}>
-                        About
-                    </a>
-                </li>
-                <li className={styles.navItem}>
-                    <a href="#" className={styles.navLink}>
-                        For Work
-                    </a>{" "}
-                </li>
-                </ul> */}
             </div>
         </>
     );

@@ -5,10 +5,9 @@ export default function AboutPage({ children, home }) {
     return (
         <>
             <main className={styles.wrapper}>
-                <h1 className={styles.headQuote}>
+                <p className={styles.headQuote}>
                     Reimagining readiness for life's uncertain moments.
-                </h1>
-                <br/>
+                </p>
                 <h4 className={styles.quote}>
                     The app that makes disaster preparedness easy and
                     accessible.

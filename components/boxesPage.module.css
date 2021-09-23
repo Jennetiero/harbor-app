@@ -1,9 +1,7 @@
 .main {
     display: grid;
-    height: fit-content;
     justify-content: center;
     align-items: center;
-    grid-gap: 0px 0px;
 }
 
 .boxes {
@@ -14,12 +12,10 @@
 }
 
 .boxOne {
-    max-width: 100%;
     padding: 2rem;
     margin: 2rem;
     width: 460px;
     height: 768px;
-    top: 6rem;
     background: #dae1f4;
     border-radius: 20px;
     grid-column-start: 1;
@@ -27,13 +23,11 @@
     grid-row-end: 4;
 }
 .boxTwo {
-    max-width: 100%;
     padding: 1rem 2rem 1rem;
     margin-bottom: 2rem;
+    margin-right: 2rem;
     width: 460px;
     height: 800px;
-    left: 55%;
-    bottom: 41rem;
     background: #d0e6f3;
     border-radius: 20px;
     grid-column-start: 3;
@@ -42,13 +36,11 @@
 }
 
 .boxThree {
-    max-width: 100%;
     padding: 3rem;
     margin: 0;
     width: 460px;
     height: 832px;
     margin-left: 2rem;
-    right: 25%;
     background: #e0f0e6;
     border-radius: 20px;
     grid-column-start: 1;
@@ -57,13 +49,9 @@
 }
 
 .boxFour {
-    max-width: 100%;
     padding: 4rem 2rem;
     width: 460px;
     height: 771px;
-    left: 55%;
-    right: 15%;
-    bottom: 81rem;
     background: #f4f0e9;
     border-radius: 20px;
     grid-column-start: 3;
@@ -71,16 +59,8 @@
     grid-row-end: 3;
 }
 
-.blueImg {
-    left: 10.87%;
-    right: 10.87%;
-    top: calc(50% - 391px / 2 + 187.5px);
-}
-
 .blueText {
     height: 95px;
-    left: 10%;
-    right: 0.83%;
     color: #1b1f2b;
     font-family: "Roboto";
     font-style: normal;
@@ -104,9 +84,6 @@
 
 .textBox {
     height: 95px;
-    left: 10%;
-    right: 0.83%;
-    top: 60%;
     color: #1b1f2b;
     font-family: "Roboto";
     font-style: normal;
@@ -116,7 +93,6 @@
     margin-left: 1.4rem;
     margin-bottom: 1rem;
 }
-
 
 .reviewBox {
     padding: 1.5rem;
@@ -129,17 +105,10 @@
     border-radius: 20px;
 }
 
-.img {
-    position: absolute;
-    left: 10.87%;
-    right: 10.87%;
-    top: calc(50% - 321px / 2 - 163.5px);
-}
-
 .headQuote {
     width: 641px;
     height: 112px;
-    margin-left: 9rem;
+    margin-left: 10.3rem;
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-size: 48px;
@@ -148,7 +117,7 @@
 }
 
 .quote {
-    margin: 1.5rem;
+    margin: 0 0 1.9rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -188,9 +157,9 @@
 }
 
 @media screen and (max-width: 900px) {
-    .wrapper {
-        max-width: 100%;
-    }
+    /* .wrapper {
+       width: 100%;
+    } */
     .boxes {
         display: block;
         width: 50%;
@@ -205,6 +174,79 @@
     .boxQuote {
         margin-top: 2rem;
     }
-   
 }
 
+@media screen and (max-width: 420px) {
+    .boxOne {
+        padding: 1rem 1.2rem;
+        margin: 0 0 2rem 7rem;
+        width: 300px;
+        height: 505px;
+    }
+
+    .textBox {
+        color: #1b1f2b;
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 35px;
+        margin: 0;
+        padding: 0 0 0 1.8rem;
+    }
+
+    .boxQuote {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 13.6px;
+        color: #1b1f2b;
+        text-align: start;
+        padding: 0 1rem 0 1.8rem;
+        margin: 0;
+    }
+    /* 2ND BOX */
+    .boxTwo {
+        padding: 1rem 1.2rem;
+        margin: 0 0 2rem 7rem;
+        width: 300px;
+        height: 580px;
+        background: #d0e6f3;
+    }
+    .blueText {
+        color: #1b1f2b;
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 30px;
+        margin: 0;
+        padding: 0 0 1rem 1.8rem;
+    }
+
+    .blueQuote {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 13.6px;
+        color: #1b1f2b;
+        text-align: start;
+        padding: 0.5rem 1rem 1rem 1.8rem;
+        margin: 0;
+    }
+    /* 3RD BOX */
+    .boxThree {
+        padding: 1rem 1.2rem;
+        margin: 0 0 2rem 7rem;
+        width: 300px;
+        height: 580px;
+    }
+    /* 4TH BOX */
+    .boxFour {
+        padding: 1rem 1.2rem;
+        margin: 0 0 2rem 7rem;
+        width: 300px;
+        height: 580px;
+    }
+    .headQuote {
+        font-size: 1.8rem;
+        /* margin-right: rem; */
+    }
+    .quote {
+        font-size: 0.75rem;
+    }
+}

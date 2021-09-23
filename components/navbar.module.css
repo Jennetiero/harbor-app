@@ -5,16 +5,16 @@
     display: none;
 }
 
-@media (max-width: 780px) {
+@media (max-width:420px) {
     .header  {
         width: 100%;
     }
     .headerBody {
         width: 100%;
     }
-    .logo {
-        width: 100%;
-    }
+    /* .logo {
+        font-size: 20px;
+    } */
 }
 
 .header {
@@ -71,7 +71,7 @@
     font-family: "DM Serif Display", serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 47px;
     text-align: center;
     color: #28514f;
 }
@@ -96,4 +96,5 @@
     text-decoration: none;
     border-radius: 40px;
 }
+
 
