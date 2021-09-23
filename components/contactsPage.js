@@ -31,8 +31,10 @@ export default function ContactsPage({ children, home }) {
                         
                     </div>
                     <div className={styles.profile}>
-                            <img
+                            <Image
                                 src="/images/phone.jpg"
+                                width={490}
+                                height={407}
                             />
                         </div>
                 </div>
