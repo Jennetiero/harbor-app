@@ -23,6 +23,7 @@ export default function AboutPage({ children, home }) {
                     style="width:100%;"
                         quality={100}
                         src="/images/profile.jpg"
+                        alt="harbor app"
                         height={1047}
                         width={721}
                     />

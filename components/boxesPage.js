@@ -4,13 +4,14 @@ import styles from "./boxesPage.module.css";
 export default function BoxesPage({ children, home }) {
     return (
         <>
-<div className={styles.main}>
-<div className={styles.boxes}>
+            <div className={styles.main}>
+                <div className={styles.boxes}>
                     <div className={styles.boxOne}>
                         <Image
                             priority
                             src="/images/imageBox.jpg"
                             className={styles.img}
+                            alt="Create your family's emergency plan"
                             width={360}
                             height={321}
                         />
@@ -39,6 +40,7 @@ export default function BoxesPage({ children, home }) {
                             priority
                             src="/images/Rectangle.jpg"
                             className={styles.blueImg}
+                            alt="Access and share important information, even offline"
                             width={360}
                             height={391}
                         />
@@ -49,6 +51,7 @@ export default function BoxesPage({ children, home }) {
                             priority
                             src="/images/greenBox.jpg"
                             className={styles.img}
+                            alt="Know exactly what to do when an emergency strikes"
                             width={360}
                             height={384}
                         />
@@ -78,19 +81,17 @@ export default function BoxesPage({ children, home }) {
                             priority
                             src="/images/yellowBox.jpg"
                             className={styles.blueImg}
+                            alt="Get peace-of-mind with automatic risk assessments"
                             width={360}
                             height={346}
                         />
                     </div>
                 </div>
-                <h1 className={styles.headQuote}>
-                We're ready, are you?
-                </h1>
+                <h1 className={styles.headQuote}>We're ready, are you?</h1>
                 <h4 className={styles.quote}>
                     Here's what people are saying about harbor.
                 </h4>
                 <div className={styles.reviewBox}>
-                
                     <h4 className={styles.textReview}>
                         It's beautiful, easy to use, and is genuinely growing my
                         confidence for crisis preparation.
@@ -105,7 +106,7 @@ export default function BoxesPage({ children, home }) {
                     </div>
                     <h4 className={styles.textReview}>iOS Beta Tester</h4>
                 </div>
-                </div>
-                </>
+            </div>
+        </>
     );
 }

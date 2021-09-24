@@ -55,7 +55,7 @@
 
 .playMarket {
     color: white;
-    background-color: #aeb4b6;
+    background-color: #949899;
     margin-left: 10rem;
     border-radius: 30px;
     justify-content: center;
@@ -68,7 +68,7 @@
 }
 
 .playMarket:hover {
-    background-color: #a9abac;
+    background-color: #85898b;
 }
 
 .profile {
