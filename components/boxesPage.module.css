@@ -6,7 +6,7 @@
 
 .boxes {
     display: grid;
-    padding: 3rem 0;
+    padding: 2rem 0;
     grid-template-rows: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
@@ -150,19 +150,12 @@
 }
 
 .starsImg {
-    height: 23px;
-    left: 10.54%;
-    right: 44.9%;
-    top: 10rem;
+    margin-top: 2rem;
 }
 
 @media screen and (max-width: 900px) {
-    /* .wrapper {
-       width: 100%;
-    } */
     .boxes {
         display: block;
-        width: 50%;
         margin: 0 13rem;
     }
     .boxTwo {
@@ -172,7 +165,7 @@
         margin: 2rem;
     }
     .boxQuote {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 }
 
