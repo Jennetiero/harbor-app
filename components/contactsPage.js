@@ -33,7 +33,7 @@ export default function ContactsPage({ children, home }) {
                     <div className={styles.profile}>
                             <Image
                                 src="/images/phone.jpg"
-                                alt="Stay one step ahead with harbor"
+                                alt=""
                                 width={490}
                                 height={407}
                             />

@@ -11,7 +11,7 @@ export default function BoxesPage({ children, home }) {
                             priority
                             src="/images/imageBox.jpg"
                             className={styles.img}
-                            alt="Create your family's emergency plan"
+                            alt=""
                             width={360}
                             height={321}
                         />
@@ -40,7 +40,7 @@ export default function BoxesPage({ children, home }) {
                             priority
                             src="/images/Rectangle.jpg"
                             className={styles.blueImg}
-                            alt="Access and share important information, even offline"
+                            alt=""
                             width={360}
                             height={391}
                         />
@@ -51,7 +51,7 @@ export default function BoxesPage({ children, home }) {
                             priority
                             src="/images/greenBox.jpg"
                             className={styles.img}
-                            alt="Know exactly what to do when an emergency strikes"
+                            alt=""
                             width={360}
                             height={384}
                         />
@@ -81,7 +81,7 @@ export default function BoxesPage({ children, home }) {
                             priority
                             src="/images/yellowBox.jpg"
                             className={styles.blueImg}
-                            alt="Get peace-of-mind with automatic risk assessments"
+                            alt=""
                             width={360}
                             height={346}
                         />
