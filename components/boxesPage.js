@@ -100,6 +100,7 @@ export default function BoxesPage({ children, home }) {
                         <Image
                             priority
                             src="/images/stars.jpg"
+                            alt=""
                             width={131}
                             height={23}
                         />
