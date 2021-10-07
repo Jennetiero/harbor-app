@@ -16,6 +16,7 @@ export default function Home() {
                     name="viewport"
                     content="initial-scale=1.0, width=device-width"
                 />
+                <meta name="description" content="harbor app made for learning NextJS" />
                 <script />
             </Head>
             <Navbar />
