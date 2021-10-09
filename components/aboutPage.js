@@ -28,9 +28,9 @@ export default function AboutPage({ children, home }) {
                         width={721}
                     />
                 </div>
-                <h1 className={styles.headQuote}>
+                <p className={styles.headQuote}>
                     The right plan for when things don't go as planned
-                </h1>
+                </p>
                 <h4 className={styles.quote}>
                     The app that makes disaster preparedness easy and
                     accessible.
